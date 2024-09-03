@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator logika </title>
+</head>
+<body>
+    <section align="center">
+        <script>
+
+            //ada dan a harus 2 kondisi benar jika ingin bernilai true
+            // ada or kondisi salah satu salah 
+
+       const nilaiSikap = 75;
+       const nilaiSkill =65;
+       const lulusSikap = nilaiSikap > 70;
+       const lulusSkill = nilaiSkill > 80;
+       const lulus = lulusSikap || lulusSkill;
+
+       document.writeln('<p>' + lulus + '</p>');
+
+       if (lulus == true) {
+        document.writeln('<p>Selamat anda lulus</p>')
+       }else{
+        document.writeln('<p>Maaf anda tidak lulus</p>')
+       };
+        
+        </script>
+    </section>
+</body>
+</html>
