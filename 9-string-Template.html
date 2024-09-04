@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        const firstName = "Egi";
+        const middleName = "Kurniawan";
+        const lastName = "Pebriyawan";
+        const lama = "Nama Saya Adalah " + firstName + middleName + lastName;
+        console.log(lama);
+        const stringTemplate = `Nama Saya Adalah ${firstName} ${middleName} ${lastName}`;
+        console.log(stringTemplate);
+
+
+        // string template juga bisa mengungkapkan ekpression
+        const nilai = 70;
+        const lulus = `nama saya adalah ${firstName}, Lulus dengan nilai = ${nilai >= 70};`;
+        console.log(lulus);
+
+        //mendukung multi line template
+        let multiline = `Saya Egi 
+        dan ini string template mendukung multiline`
+        document.writeln("<pre>");
+        document.writeln (multiline);
+        document.writeln("</pre>");
+
+    </script>
+</body>
+</html>
